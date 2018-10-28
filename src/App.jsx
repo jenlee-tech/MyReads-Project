@@ -1,7 +1,9 @@
 import React from "react";
 
 import MainPage from "./components/pages/mainpage";
-import SearchPage from "./components/pages/searchpage";
+
+//import SearchPage from "./components/pages/searchpage";
+
 import * as BooksAPI from "./BooksAPI";
 import "./App.css";
 
