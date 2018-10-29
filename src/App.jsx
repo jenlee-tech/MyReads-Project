@@ -1,5 +1,6 @@
 import React from "react";
 
+import SearchPage from "./components/pages/searchpage";
 import MainPage from "./components/pages/mainpage";
 
 //import SearchPage from "./components/pages/searchpage";
@@ -20,6 +21,7 @@ class BooksApp extends React.Component {
 
   moveShelf = (book, shelf) => {
     BooksAPI.update(book, shelf);
+
     BooksAPI.getAll().then(books => {
       this.setState({ books: books });
     });
@@ -29,7 +31,12 @@ class BooksApp extends React.Component {
     console.log(this.state.books);
     return (
       <div className="app">
-        <MainPage bookList={this.state.books} moveShelf={this.moveShelf} />
+        {/*<MainPage
+          bookList={this.state.books}
+          moveShelf={this.moveShelf}
+          
+        />*/}
+        <SearchPage />
       </div>
     );
   }
