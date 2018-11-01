@@ -9,6 +9,7 @@ class SearchPage extends Component {
     searchBooks: []
   };
 
+  //this updates the state - based on updateSearchedBooks
   updateQuery = query => {
     this.setState({
       query: query
@@ -16,6 +17,7 @@ class SearchPage extends Component {
     this.updateSearchedBooks(query);
   };
 
+  //this searches through the books base on user's input in Search field
   updateSearchedBooks = query => {
     if (query) {
       BooksAPI.search(query).then(searchBooks => {
