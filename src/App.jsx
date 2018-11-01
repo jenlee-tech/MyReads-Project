@@ -13,13 +13,15 @@ class BooksApp extends React.Component {
     books: []
   };
 
+  //function that calls all the books and then places all the books in the array as a state
   componentDidMount() {
     BooksAPI.getAll().then(books => {
       this.setState({ books: books });
     });
   }
 
-  moveShelf = (book, shelf) => {
+  //function that moves the books to different shelves and then updates the state
+  changeShelf = (book, shelf) => {
     BooksAPI.update(book, shelf);
 
     BooksAPI.getAll().then(books => {
@@ -35,13 +37,21 @@ class BooksApp extends React.Component {
           exact
           path="/"
           render={() => (
-            <MainPage bookList={this.state.books} moveShelf={this.moveShelf} />
+            <MainPage
+              bookList={this.state.books}
+              changeShelf={this.changeShelf}
+            />
           )}
         />
 
         <Route
           path="/search"
-          render={() => <SearchPage moveShelf={this.moveShelf} />}
+          render={() => (
+            <SearchPage
+              changeShelf={this.changeShelf}
+              books={this.state.books}
+            />
+          )}
         />
       </div>
     );
