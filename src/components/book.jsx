@@ -23,7 +23,7 @@ class Books extends Component {
               value={this.props.currentShelf || "None"}
             >
               <option value="move" disabled>
-                Move to...
+                Move the book to...
               </option>
               <option value="currentlyReading"> Currently Reading </option>
               <option value="wantToRead"> Want to Read </option>
