@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Books from "../book";
+import Books from "../Book";
 import { Link } from "react-router-dom";
 
 class MainPage extends Component {
