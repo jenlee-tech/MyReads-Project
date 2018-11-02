@@ -10,6 +10,7 @@ class BooksApp extends React.Component {
     books: []
   };
   //life cycle event that uses getAll to call the books and change the state - rerenders
+  //respBooks - results from BooksAPI.getAll
   componentDidMount() {
     BooksAPI.getAll().then(respBooks => {
       this.setState({ books: respBooks });
@@ -26,13 +27,13 @@ class BooksApp extends React.Component {
   };
 
   render() {
-    console.log(this.state.books);
     return (
       <div className="app">
         <Route
           exact
           path="/"
           render={() => (
+            //props for MainPage component
             <MainPage
               bookList={this.state.books}
               changeShelf={this.changeShelf}
@@ -43,6 +44,7 @@ class BooksApp extends React.Component {
         <Route
           path="/search"
           render={() => (
+            //props for SearchPage component
             <SearchPage
               changeShelf={this.changeShelf}
               books={this.state.books}

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 class MainPage extends Component {
   state = {};
   render() {
-    console.log(this.props.bookList);
     return (
       <div className="list-books">
         <div className="list-books-title">
@@ -17,6 +16,7 @@ class MainPage extends Component {
               <h2 className="bookshelf-title">Currently Reading</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">
+                  {/*filtering books that equal to currentlyReading, then passing the book to Books component*/}
                   {this.props.bookList
                     .filter(book => book.shelf === "currentlyReading")
                     .map(book => (
@@ -35,6 +35,7 @@ class MainPage extends Component {
               <h2 className="bookshelf-title">Want to Read</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">
+                  {/*filtering books that equal to wantToRead, then passing the book to Books component*/}
                   {this.props.bookList
                     .filter(book => book.shelf === "wantToRead")
                     .map(book => (
@@ -53,6 +54,7 @@ class MainPage extends Component {
               <h2 className="bookshelf-title">Read</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">
+                  {/*filtering books that equal to read, then passing the book to Books component*/}
                   {this.props.bookList
                     .filter(book => book.shelf === "read")
                     .map(book => (
