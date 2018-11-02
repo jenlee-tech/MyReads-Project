@@ -2,9 +2,6 @@ import React from "react";
 import { Route } from "react-router-dom";
 import SearchPage from "./components/pages/searchpage";
 import MainPage from "./components/pages/mainpage";
-
-//import SearchPage from "./components/pages/searchpage";
-
 import * as BooksAPI from "./BooksAPI";
 import "./App.css";
 
@@ -12,20 +9,19 @@ class BooksApp extends React.Component {
   state = {
     books: []
   };
-
-  //function that calls all the books and then places all the books in the array as a state
+  //life cycle event that uses getAll to call the books and change the state - rerenders
   componentDidMount() {
-    BooksAPI.getAll().then(books => {
-      this.setState({ books: books });
+    BooksAPI.getAll().then(respBooks => {
+      this.setState({ books: respBooks });
     });
   }
 
-  //function that moves the books to different shelves and then updates the state
+  //this moves the books to different shelves and then updates the state
   changeShelf = (book, shelf) => {
     BooksAPI.update(book, shelf);
 
-    BooksAPI.getAll().then(books => {
-      this.setState({ books: books });
+    BooksAPI.getAll().then(respBooks => {
+      this.setState({ books: respBooks });
     });
   };
 

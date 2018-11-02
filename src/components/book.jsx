@@ -2,7 +2,6 @@ import React, { Component } from "react";
 class Books extends Component {
   state = {};
   render() {
-    //console.log(this.props.book.imageLinks.thumbnail);
     return (
       <div className="book">
         <div className="book-top">

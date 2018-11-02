@@ -96,3 +96,5 @@ For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Resources/Acknowledgements:
 
 [Programming with Mosh - Mosh Hamedani](https://www.youtube.com/watch?v=Ke90Tje7VS0&feature=youtu.be) - Beginner's Guide to React
+
+[React Training/React Router](https://reacttraining.com/react-router/web/guides/philosophy) - Guides in React/React Router

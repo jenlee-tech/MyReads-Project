@@ -37,6 +37,7 @@ class SearchPage extends Component {
       <div className="search-books">
         <div className="search-books-bar">
           <Link to="/" className="close-search">
+            {/*links back to root*/}
             Close
           </Link>
 
@@ -61,7 +62,7 @@ class SearchPage extends Component {
                 <li key={searchedBook.id}>
                   <Books
                     book={searchedBook}
-                    moveShelf={this.props.moveShelf}
+                    changeShelf={this.props.changeShelf}
                     currentShelf={shelf}
                   />
                 </li>
