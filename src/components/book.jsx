@@ -10,9 +10,8 @@ class Books extends Component {
             style={{
               width: 128,
               height: 193,
-              backgroundImage: `url(${(this.props.book.imageLinks &&
-                this.props.book.imageLinks.thumbnail) ||
-                "Blank Cover"})`
+              backgroundImage: `url(${this.props.book.imageLinks &&
+                this.props.book.imageLinks.thumbnail})`
             }}
           />
           <div className="book-shelf-changer">
@@ -34,7 +33,8 @@ class Books extends Component {
         </div>
         <div className="book-title"> {this.props.book.title} </div>
         <div className="book-authors">
-          {this.props.book.authors || "No Author found"}
+          {(this.props.book.authors && this.props.book.authors[0]) ||
+            "No Author found"}
         </div>
       </div>
     );

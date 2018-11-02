@@ -20,14 +20,16 @@ class SearchPage extends Component {
   //this searches through the books base on user's input in Search field
   updateSearchedBooks = query => {
     if (query) {
+      //if there is input do this
       BooksAPI.search(query).then(searchBooks => {
         if (searchBooks.error) {
-          this.setState({ searchBooks: [] });
+          this.setState({ searchBooks: [] }); //if there is an error, searchBooks remains empty
         } else {
-          this.setState({ searchBooks: searchBooks });
+          this.setState({ searchBooks: searchBooks }); //else provide the results of the search
         }
       });
     } else {
+      //else keep searchBooks empty
       this.setState({ searchBooks: [] });
     }
   };
@@ -45,11 +47,12 @@ class SearchPage extends Component {
             <input
               type="text"
               placeholder="Search by title or author"
-              value={this.state.query}
+              value={this.state.query} //detects event change and starts updateQuery
               onChange={event => this.updateQuery(event.target.value)}
             />
           </div>
         </div>
+        {/*after going through updateQuery, then searchBooks goes through map*/}
         <div className="search-books-results">
           <ol className="books-grid">
             {this.state.searchBooks.map(searchedBook => {
