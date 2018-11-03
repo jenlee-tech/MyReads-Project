@@ -13,7 +13,7 @@ Udacity provided a repository that contained a starter template. This template a
 
 ## Backend Server:
 
-For simpilicty's sake, Udacity provided a backend server to develop again. They provided a BooksAPI.js that contains methods like:
+For simpilicty's sake, Udacity provided a backend server to develop against. They provided a BooksAPI.js that contains methods like:
 
 - [`getAll`](#getall)
 - [`update`](#update)
@@ -21,13 +21,13 @@ For simpilicty's sake, Udacity provided a backend server to develop again. They 
 
 ## Important:
 
-The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in SEARCH_TERMS.md. That list of terms are the only terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
+The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](https://github.com/clairehudak/Project-6-My-Reads/blob/master/SEARCH_TERMS.md). That list of terms are the only terms that will work with the backend, so don't freak out like I did, when searches such as Basket Weaving or Bubble Wrap don't come back with any results.
 
 ## Resources/Acknowledgements:
 
 - [Programming with Mosh - Mosh Hamedani](https://www.youtube.com/watch?v=Ke90Tje7VS0&feature=youtu.be) - Beginner's Guide to React
 
-- Udacity lessons for FEND Nanodegree, section 5 Lessons 1-5
+- Udacity lessons for FEND Nanodegree, section 5, Lessons 1-5
 
 - Udacity's Project Grading Rubric on MyReads: A Book Lending App
 
