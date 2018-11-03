@@ -4,7 +4,7 @@
 
 Udacity provided a repository that contained a starter template. This template already contains static HTML and CSS code. The objectives of this project were to initally have 3 shelves or sections that contain books. Each book has options to move to different shelves. These shelves are "Read," "Currently Read," "Want to Read." There is also an option for "None." The expectation of the object is to use React to provide the functionaility of these books. In addition, there is a search feature that needs to be implemented. Once a search is done, results show and the books have the option to move to different shelves.
 
-## Installation/Launch
+## Installation/Launch:
 
 - download or clone this project
 - install all project dependencies with npm install
