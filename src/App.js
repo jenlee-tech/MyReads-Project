@@ -13,16 +13,22 @@ class BooksApp extends React.Component {
   //respBooks - results from BooksAPI.getAll
   componentDidMount() {
     BooksAPI.getAll().then(respBooks => {
-      this.setState({ books: respBooks });
+      this.setState({
+        books: respBooks
+      });
     });
   }
 
   //this moves the books to different shelves and then updates the state
-  changeShelf = (book, shelf) => {
-    BooksAPI.update(book, shelf);
 
-    BooksAPI.getAll().then(respBooks => {
-      this.setState({ books: respBooks });
+  changeShelf = (book, shelf) => {
+    console.log("changing shelf", shelf);
+    BooksAPI.update(book, shelf).then(response => {
+      BooksAPI.getAll().then(respBooks => {
+        this.setState({
+          books: respBooks
+        });
+      });
     });
   };
 
