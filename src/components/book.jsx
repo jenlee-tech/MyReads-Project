@@ -35,6 +35,7 @@ class Books extends Component {
         <div className="book-authors">
           {(this.props.book.authors && this.props.book.authors[0]) ||
             "No Author found"}
+          <div>{!this.props.book.imageLinks ? "No Book Cover" : ""}</div>
         </div>
       </div>
     );
