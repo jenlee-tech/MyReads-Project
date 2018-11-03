@@ -1,4 +1,4 @@
-# MyReads Project by Jennifer Lee
+# MyReads: A Book Lending App by Jennifer Lee
 
 ## Project Overview:
 
@@ -18,6 +18,8 @@ You could download this repository by clicking the above button that states, "Cl
 
 - Udacity lessons for FEND Nanodegree, section 5 Lessons 1-5
 
+- Udacity's Project Grading Rubric on MyReads: A Book Lending App
+
 - [EMEA MyReads (MAEVA) Walk-Thru](https://www.youtube.com/watch?v=i6L2jLHV9j8) - walkthrough for Project 6
 
 - [Webinar: MyReads (P6 Long)](https://www.youtube.com/watch?v=acJHkd6K5kI&=&feature=youtu.be) - longer version of P6 walkthrough
@@ -28,3 +30,11 @@ You could download this repository by clicking the above button that states, "Cl
 - [ES6 - React](https://github.com/discountry/ES6-for-React/blob/master/logical-operators.md) - documentation on logical operators for React
 
 -[Conditional Rendering in React](https://medium.freecodecamp.org/conditional-rendering-in-react-using-ternaries-and-logical-and-7807f53b6935) - Full title: Conditional Rendering in React using Ternaries and Logical AND
+
+- Markdown cheat sheet from [Github:](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+- [Emoji cheat sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/) for Markdown files
+
+- This repository contains starter code and comments from [Udacity's MyReads](https://github.com/udacity/reactnd-project-myreads-starter)
+
+- Udacity's Front End Nanodegree [Style Guides](https://github.com/udacity/frontend-nanodegree-styleguide)

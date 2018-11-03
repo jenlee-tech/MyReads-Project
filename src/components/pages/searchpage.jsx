@@ -58,10 +58,12 @@ class SearchPage extends Component {
             {this.state.searchBooks.map(searchedBook => {
               let shelf = "none";
               this.props.books.map(
-                book =>
-                  book.id === searchedBook.id ? (shelf = book.shelf) : ""
+                (
+                  book //if book.id equals searchedBook.id, the shelf would be book.shelf
+                ) => (book.id === searchedBook.id ? (shelf = book.shelf) : "")
               );
               return (
+                //passes searchedBook into Books component
                 <li key={searchedBook.id}>
                   <Books
                     book={searchedBook}
