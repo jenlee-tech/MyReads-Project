@@ -22,7 +22,6 @@ class BooksApp extends React.Component {
   }
 
   //this moves the books to different shelves and then updates the state
-
   changeShelf = (book, shelf) => {
     BooksAPI.update(book, shelf).then(response => {
       BooksAPI.getAll().then(respBooks => {
@@ -34,8 +33,7 @@ class BooksApp extends React.Component {
   };
 
   render() {
-    return ( <
-      div className = "app" >
+    return ( < div className = "app" >
       <
       Route exact path = "/"
       render = {
@@ -68,7 +66,7 @@ class BooksApp extends React.Component {
           />
         )
       }
-      /> <
+      />  <
       /div>
     );
   }
