@@ -40,6 +40,10 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 
 - [Conditional Rendering in React](https://medium.freecodecamp.org/conditional-rendering-in-react-using-ternaries-and-logical-and-7807f53b6935) - Full title: Conditional Rendering in React using Ternaries and Logical AND
 
+- [For Dummies, Javascript Promises](https://scotch.io/tutorials/javascript-promises-for-dummies) - the section, "Chaining Promises" was very helpful!
+
+- [Understanding Synchronous vs. Asynchrouns Javascript](https://www.youtube.com/watch?v=Q-Zmc0E0GYY) - the last 3 minutes was very helpful on how to use the "then" method to handle asynchronous behavior. Thanks First Reviewer for pointing me in the right direction!
+
 - [How to comment in React JSX](https://wesbos.com/react-jsx-comments/)
 
 - Markdown cheat sheet from [Github:](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
