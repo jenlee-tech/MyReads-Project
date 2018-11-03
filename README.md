@@ -2,15 +2,26 @@
 
 ## Project Overview:
 
-In this project I cloned a respository provided by Udacity that contained a starter template. This template already contained the HTML and CSS static code. The objectives of this project was to initally have 3 shelves or sections that contains books. Each book has options to move to different shelves. These shelves are "Read," "Currently Read," "Want to Read." There is even an option for "None." The expectation of the object is to use React to provide the functionaility of these books. In addition, there is a search feature to search for more books to be placed in the shelves.
+Udacity provided a repository that contained a starter template. This template already contains static HTML and CSS code. The objectives of this project was to initally have 3 shelves or sections that contain books. Each book has options to move to different shelves. These shelves are "Read," "Currently Read," "Want to Read." There is even an option for "None." The expectation of the object is to use React to provide the functionaility of these books. In addition, there is a search feature that needs to be implemented. Once a search is done, results show and the books have the option to move to different shelves.
 
-## How to use:
+## Installation/Launch
 
-You could download this repository by clicking the above button that states, "Clone or Download." You will choose either Download Zip or Open in Desktop. Put the files in one folder. In a command prompt or Git Bash, navigate to that folder, and type NPM Start and then press the enter key. Your browswer will automatically open with the URL, http://localhost:3000/
+- download or clone this project
+- install all project dependencies with npm install
+- start the development server with npm start
+- a modern web browser is needed, after npm start, the browser will automatically open with this URL, http://localhost:3000/ with the default port of 3000.
 
-## Prerequisites/Dependencies:
+## Backend Server:
 
-- A modern day web browser with Javascript enabled.
+For simpilicty's sake, Udacity provided a backend server to develop again. They provided a BooksAPI.js that contains methods like:
+
+- [`getAll`](#getall)
+- [`update`](#update)
+- [`search`](#search)
+
+## Important:
+
+The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in SEARCH_TERMS.md. That list of terms are the only terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
 
 ## Resources/Acknowledgements:
 
@@ -27,9 +38,12 @@ You could download this repository by clicking the above button that states, "Cl
 - [React Training/React Router](https://reacttraining.com/react-router/web/guides/philosophy) - Guides in React/React Router
 
 - [NPM documentation ](https://docs.npmjs.com/cli/start)
+
 - [ES6 - React](https://github.com/discountry/ES6-for-React/blob/master/logical-operators.md) - documentation on logical operators for React
 
 -[Conditional Rendering in React](https://medium.freecodecamp.org/conditional-rendering-in-react-using-ternaries-and-logical-and-7807f53b6935) - Full title: Conditional Rendering in React using Ternaries and Logical AND
+
+-[How to comment in React JSX](https://wesbos.com/react-jsx-comments/)
 
 - Markdown cheat sheet from [Github:](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
